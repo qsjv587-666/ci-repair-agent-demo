@@ -1,3 +1,3 @@
 export function getActiveTodos(todos) {
-  return todos;
+  return todos.filter((todo) => !todo.completed);
 }

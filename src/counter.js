@@ -1,3 +1,3 @@
 export function increment(count) {
-  return count;
+  return count + 1;
 }

@@ -6,7 +6,7 @@ from src.clinic.serializer import serialize_patient_profile
 def build_patient_packet(patient_id):
     profile = load_patient_profile(patient_id)
     return {
-        "title": f"Follow-up summary for {profile['name']}",
+        "title": f"Follow-up summary for {profile['full_name']}",
         "patient": serialize_patient_profile(profile),
         "subject": build_followup_subject(profile),
     }
